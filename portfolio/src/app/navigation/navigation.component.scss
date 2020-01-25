@@ -1,0 +1,41 @@
+
+  .slide-menu{
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100vh;
+    background-color: #FF7E7E;
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .slide-menu ul{
+    margin: auto;
+    top: 30%;
+    position: relative;
+    list-style: none;
+    transform: translateX(-200px);
+  }
+  
+  .slide-menu ul li{
+    padding: 1em;
+    color: #FFF9ED;
+  }
+  
+  .hamburger{
+    position: absolute;
+    z-index: 1;
+  }
+
+  .btm-left{
+    position: absolute;
+    bottom: 0;
+    transform: rotate(40deg) translateX(1%) translateY(-25%);
+  }
+  
+  .tp-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(40deg) translateX(1%) translateY(-100%);
+  }
