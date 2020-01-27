@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import './variables';
+
+
+h1, h3, h4{
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  color: $brown;
+}
+
+p{
+  font-family: 'Montserrat'
+}
+body{
+    background-color: $tan;
+  }
+
+  router-outlet ~ * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
