@@ -18,8 +18,6 @@ export class NavigationComponent implements OnInit {
     let hamburger = document.querySelector("#hamburger");
     let slideMenu = document.querySelector("#slide-menu");
     let menu = document.querySelector("#menu");
-    let lines = document.querySelectorAll('#rect4')
-    let topLines = document.querySelectorAll('#rect5')
     let menuOpen = false;
     
     hamburger.addEventListener("mouseenter", function(){
@@ -67,31 +65,6 @@ export class NavigationComponent implements OnInit {
           duration: 300
       });
       };
-    });
-
-    document.addEventListener("click", function(){
-      (<any>anime).default({
-        targets: lines,
-        translateY: function(){
-          return (<any>anime).default.random(220, 220)
-        },
-        direction: "alternate",
-        easing: 'easeInBack',
-        loop: 1,
-        duration: 1800,
-        delay: (<any>anime).default.stagger(100)
-      });
-      (<any>anime).default({
-        targets: topLines,
-        translateY: function(){
-          return (<any>anime).default.random(-180, -220)
-        },
-        direction: "alternate",
-        easing: 'easeInBack',
-        loop: 1,
-        duration: 1800,
-        delay: (<any>anime).default.stagger(100, {direction: "reverse"})
-      });
     });
 
   }

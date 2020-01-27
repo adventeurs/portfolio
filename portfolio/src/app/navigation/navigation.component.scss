@@ -6,8 +6,7 @@
     height: 100vh;
     background-color: #FF7E7E;
     position: absolute;
-    z-index: 0;
-  }
+      }
   
   .slide-menu ul{
     margin: auto;
@@ -19,23 +18,18 @@
   
   .slide-menu ul li{
     padding: 1em;
-    color: #FFF9ED;
+  }
+
+  .slide-menu ul li a{
+      color: #FFF9ED;
+      text-decoration: none;
   }
   
   .hamburger{
     position: absolute;
-    z-index: 1;
+    cursor: pointer;
   }
 
-  .btm-left{
-    position: absolute;
-    bottom: 0;
-    transform: rotate(40deg) translateX(1%) translateY(-25%);
-  }
-  
-  .tp-right{
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: rotate(40deg) translateX(1%) translateY(-100%);
+  .active{
+    border-left: 5px solid #FFF9ED;
   }
