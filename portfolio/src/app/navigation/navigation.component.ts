@@ -25,7 +25,7 @@ export class NavigationComponent implements OnInit {
         (<any>anime).default({
           targets: [rect1, rect2, rect3],
           translateX: function() {
-            return (<any>anime).default.random(0, 10);
+            return (<any>anime).default.random(-15, -8);
           },
           easing: 'easeOutElastic'
       });
@@ -48,6 +48,7 @@ export class NavigationComponent implements OnInit {
           targets: menu,
           translateX: 25
         });
+        hamburger.classList.add('ham-active');
       }
       else{
         (<any>anime).default({
@@ -56,7 +57,7 @@ export class NavigationComponent implements OnInit {
       });
       (<any>anime).default({
         targets: menu,
-        translateX: -100
+        translateX: -160
       });
         (<any>anime).default({
           targets: slideMenu,
@@ -64,6 +65,7 @@ export class NavigationComponent implements OnInit {
           easing: 'easeOutQuad',
           duration: 300
       });
+      setTimeout(() => hamburger.classList.remove('ham-active'), 100);
       };
     });
 

@@ -1,3 +1,4 @@
+@import 'src/scss/variables';
 
   .slide-menu{
     top: 0;
@@ -23,8 +24,11 @@
   }
 
   .slide-menu ul li a{
-      color: #FFF9ED;
       text-decoration: none;
+  }
+
+  .slide-menu ul li a h3{
+      color: $tan;
   }
   
   .hamburger{
@@ -35,3 +39,48 @@
   .active{
     box-shadow: -5px 0 0 0 #FFF9ED;
   }
+
+  .ham{
+    background: rgb(255,126,126);
+    background: radial-gradient(circle, rgba(255,126,126,1) 58%, rgba(255,255,255,1) 100%);
+    background-position: 2% 2%;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    margin: 1em;
+    box-shadow: inset -3px -3px 8px rgba(104, 27, 27, 0.2),
+                inset 3px 3px 8px rgba(255, 255, 255, 0.473),
+                3px 3px 8px rgba(104, 27, 27, 0.2),
+                -3px -3px 8px rgba(255, 255, 255, 0.279)   ;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: box-shadow 0.2s linear;
+  }
+  
+  .ham div{
+    height: 8px;
+    margin: 3px -10px;
+    width: 80%;
+    background-color: $tan;
+    box-shadow: inset 3px 2px 3px rgba(104, 27, 27, 0.2),
+                inset -3px -3px 8px rgba(255, 255, 255, 0.4),
+                 3px 0px 5px rgba(97, 20, 20, 0.2);
+    border-radius: 10%;
+  }
+
+  .ham:active{
+      box-shadow: none;
+  }
+
+ #rect2{
+     margin: 3px -5px !important;
+  }
+
+  .ham-active{
+      background: transparent !important;
+      box-shadow: none;
+  }
+
+  

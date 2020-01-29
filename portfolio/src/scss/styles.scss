@@ -1,20 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 @import './variables';
 
 
 h1, h3, h4{
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
   color: $brown;
+}
+
+h3{
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+h4{
+  font-size: 20px;
 }
 
 p{
   font-family: 'Montserrat'
 }
 body{
-    background-color: $tan;
-  }
+  background: rgb(255,253,248);
+background: -moz-linear-gradient(140deg, rgba(255,253,248,1) 21%, rgba(255,249,237,1) 39%);
+background: -webkit-linear-gradient(140deg, rgba(255,253,248,1) 21%, rgba(255,249,237,1) 39%);
+background: linear-gradient(140deg, rgba(255,253,248,1) 21%, rgba(255,249,237,1) 39%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffdf8",endColorstr="#fff9ed",GradientType=1);
+transition: background-color 1s linear; 
+  
+}
 
   router-outlet ~ * {
     position: absolute;

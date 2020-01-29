@@ -1,0 +1,33 @@
+@import 'src/scss/variables';
+
+.portfolio-box{
+    --notchSize: 70px;
+    --notchDiff: 65px;
+
+    width: 70%;
+    height: 40%;
+    border-radius: 10px;
+    background-color: tomato;
+    clip-path: 
+      polygon(
+        0% 0, 
+        calc(100% - var(--notchSize)) 0%, 
+        100% var(--notchDiff), 
+        100% calc(100%), 
+        calc(100% - var(--notchSize)) 100%, 
+        var(--notchSize) 100%, 
+        0% calc(100% - var(--notchDiff))
+      );
+}
+
+.portfolio-page{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: $red !important;
+    transition: background-color 1s linear; 
+}
